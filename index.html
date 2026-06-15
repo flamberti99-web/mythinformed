@@ -1174,7 +1174,7 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
         <div class="tier-name">HERO</div>
         <div class="tier-price">$3</div>
         <div class="tier-desc">A one-time offering to the gods. Keeps the site running and new content coming.</div>
-        <button class="tier-btn" onclick="window.open('https://www.patreon.com/myth_informed','_blank')">Support on Patreon</button>
+        <button class="tier-btn" onclick="window.open('https://www.patreon.com/mythinformed','_blank')">Support on Patreon</button>
       </div>
       <div class="tier-card">
         <span class="tier-icon">✨</span>
@@ -1202,7 +1202,7 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
    CONFIG
 ════════════════════════════════ */
 const API_KEY   = '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';
-const BUY_URL   = 'https://www.patreon.com/myth_informed';
+const BUY_URL   = 'https://www.patreon.com/mythinformed';
 const MAX_TOK   = 3;
 const REFILL_HR = 24;
 const TOTAL_CH  = 7;
@@ -1218,33 +1218,33 @@ const LIBRARY = {
         {id:'g-creation',icon:'🌌',name:'The Creation',role:'How the world began',gameLink:null},
         {id:'g-titans',icon:'⛰️',name:'The Titans',role:'The first rulers of the cosmos',gameLink:null},
         {id:'g-cronus',icon:'⚗️',name:'Cronus and the Gods',role:'How Zeus overthrew his father',gameLink:'underworld'},
-        {id:'g-titanomachy',icon:'⚡',name:'The Titanomachy',role:'The war that shaped the world',gameLink:'olympus'},
+        {id:'g-titanomachy',icon:'⚡',name:'The Titanomachy',role:'The war that shaped the world',gameLink:'underworld'},
         {id:'g-realms',icon:'🌊',name:'Division of the Realms',role:'Zeus, Poseidon, and Hades divide creation',gameLink:'underworld'},
       ]},
       {arc:'Arc 2 — The Gods Settle In',entries:[
         {id:'g-prometheus',icon:'🔥',name:'Prometheus',role:'The Titan who gave fire to mankind',gameLink:null},
         {id:'g-pandora',icon:'📦',name:"Pandora's Box",role:'The first woman and the birth of suffering',gameLink:null},
-        {id:'g-flood',icon:'🌊',name:'The Great Flood',role:'Deucalion and the rebirth of humanity',gameLink:'poseidon'},
+        {id:'g-flood',icon:'🌊',name:'The Great Flood',role:'Deucalion and the rebirth of humanity',gameLink:'troy'},
         {id:'g-persephone',icon:'🌸',name:'Persephone',role:'How the seasons came to be',gameLink:'underworld'},
       ]},
       {arc:'Arc 3 — Gods Among Mortals',entries:[
-        {id:'g-arachne',icon:'🕷️',name:'Athena and Arachne',role:'Pride, weaving, and divine punishment',gameLink:'olympus'},
+        {id:'g-arachne',icon:'🕷️',name:'Athena and Arachne',role:'Pride, weaving, and divine punishment',gameLink:'underworld'},
         {id:'g-apollo-daphne',icon:'🌿',name:'Apollo and Daphne',role:'Love, pursuit, and transformation',gameLink:null},
         {id:'g-eros-psyche',icon:'💘',name:'Eros and Psyche',role:'The most human love story in all of myth',gameLink:null},
         {id:'g-midas',icon:'✨',name:'King Midas',role:'The curse of the golden touch',gameLink:null},
       ]},
       {arc:'Arc 4 — The Age of Heroes',entries:[
-        {id:'g-perseus',icon:'🐍',name:'Perseus and Medusa',role:'The original hero\'s journey',gameLink:'hero'},
-        {id:'g-heracles',icon:'🦁',name:'The Labors of Heracles',role:'Twelve impossible tasks',gameLink:'hero'},
+        {id:'g-perseus',icon:'🐍',name:'Perseus and Medusa',role:'The original hero\'s journey',gameLink:'labyrinth'},
+        {id:'g-heracles',icon:'🦁',name:'The Labors of Heracles',role:'Twelve impossible tasks',gameLink:'labyrinth'},
         {id:'g-theseus',icon:'🌀',name:'Theseus and the Minotaur',role:'The maze, the monster, and the thread',gameLink:'labyrinth'},
-        {id:'g-jason',icon:'🐏',name:'Jason and the Argonauts',role:'The quest for the Golden Fleece',gameLink:'hero'},
+        {id:'g-jason',icon:'🐏',name:'Jason and the Argonauts',role:'The quest for the Golden Fleece',gameLink:'labyrinth'},
         {id:'g-oedipus',icon:'👁️',name:'Oedipus',role:'Fate, prophecy, and unavoidable tragedy',gameLink:null},
       ]},
       {arc:'Arc 5 — The Trojan War',entries:[
         {id:'g-paris',icon:'🍎',name:'The Judgment of Paris',role:'How one choice started a war',gameLink:'troy'},
         {id:'g-iliad',icon:'⚔️',name:'The Iliad',role:'Ten years of war distilled into forty days',gameLink:'troy'},
         {id:'g-troy-fall',icon:'🐴',name:'The Fall of Troy',role:'The horse, the fire, and the end of an age',gameLink:'troy'},
-        {id:'g-odyssey',icon:'🌊',name:'The Odyssey',role:'Ten years trying to get home',gameLink:'poseidon'},
+        {id:'g-odyssey',icon:'🌊',name:'The Odyssey',role:'Ten years trying to get home',gameLink:'troy'},
       ]},
     ],
     characters:[
@@ -1288,26 +1288,26 @@ const LIBRARY = {
     stories:[
       {arc:'Arc 1 — The Beginning',entries:[
         {id:'n-creation',icon:'🌌',name:'The Creation',role:'Ice, fire, and the body of a giant',gameLink:null},
-        {id:'n-ymir',icon:'🧊',name:'Ymir and the First Giants',role:'Before gods, there was frost',gameLink:'yggdrasil'},
-        {id:'n-odin-vili',icon:'🌬️',name:'Odin, Vili, and Ve',role:'The three brothers who shaped the world',gameLink:'valhalla'},
+        {id:'n-ymir',icon:'🧊',name:'Ymir and the First Giants',role:'Before gods, there was frost',gameLink:'ragnarok'},
+        {id:'n-odin-vili',icon:'🌬️',name:'Odin, Vili, and Ve',role:'The three brothers who shaped the world',gameLink:'ragnarok'},
         {id:'n-humans',icon:'🌳',name:'Ask and Embla',role:'How humans were made from two trees',gameLink:null},
-        {id:'n-asgard',icon:'🏰',name:'Building Asgard',role:'The realm of the gods and how it was built',gameLink:'valhalla'},
+        {id:'n-asgard',icon:'🏰',name:'Building Asgard',role:'The realm of the gods and how it was built',gameLink:'ragnarok'},
       ]},
       {arc:'Arc 2 — The Gods Take Shape',entries:[
-        {id:'n-odin-eye',icon:'👁️',name:"Odin's Sacrifice",role:'The eye he gave for wisdom',gameLink:'valhalla'},
-        {id:'n-runes',icon:'ᚱ',name:'Odin and the Runes',role:'Nine days hung on the World Tree',gameLink:'yggdrasil'},
+        {id:'n-odin-eye',icon:'👁️',name:"Odin's Sacrifice",role:'The eye he gave for wisdom',gameLink:'ragnarok'},
+        {id:'n-runes',icon:'ᚱ',name:'Odin and the Runes',role:'Nine days hung on the World Tree',gameLink:'ragnarok'},
         {id:'n-mjolnir',icon:'🔨',name:'The Forging of Mjolnir',role:"How Loki's mischief gave Thor his hammer",gameLink:'forge'},
         {id:'n-loki-children',icon:'🐍',name:"Loki's Children",role:'Fenrir, Jormungandr, Hel — the monsters of the end',gameLink:'ragnarok'},
-        {id:'n-yggdrasil',icon:'🌳',name:'Yggdrasil',role:'The World Tree that holds all nine realms',gameLink:'yggdrasil'},
+        {id:'n-yggdrasil',icon:'🌳',name:'Yggdrasil',role:'The World Tree that holds all nine realms',gameLink:'ragnarok'},
       ]},
       {arc:'Arc 3 — Gods and Giants at War',entries:[
-        {id:'n-thor-jotunheim',icon:'⛈️',name:"Thor's Journey to Jotunheim",role:'The god of thunder goes to the land of giants',gameLink:'jotunheim'},
+        {id:'n-thor-jotunheim',icon:'⛈️',name:"Thor's Journey to Jotunheim",role:'The god of thunder goes to the land of giants',gameLink:'forge'},
         {id:'n-idun',icon:'🍎',name:"Idunn's Apples",role:'The theft that nearly killed the gods',gameLink:'loki'},
         {id:'n-fafnir',icon:'🐉',name:'Fafnir the Dragon',role:'Greed, gold, and a cursed hoard',gameLink:null},
         {id:'n-thrym',icon:'🔨',name:'Thor in Disguise',role:"Loki's plan to retrieve Mjolnir from a giant",gameLink:'loki'},
       ]},
       {arc:'Arc 4 — The Unraveling',entries:[
-        {id:'n-baldr',icon:'☀️',name:"Baldr's Death",role:'The most beloved god and the beginning of the end',gameLink:'yggdrasil'},
+        {id:'n-baldr',icon:'☀️',name:"Baldr's Death",role:'The most beloved god and the beginning of the end',gameLink:'ragnarok'},
         {id:'n-loki-bound',icon:'⛓️',name:'Loki Bound',role:'The punishment that lasted until Ragnarök',gameLink:'loki'},
         {id:'n-fimbulwinter',icon:'❄️',name:'Fimbulwinter',role:'Three years of winter with no summer between',gameLink:'ragnarok'},
         {id:'n-signs',icon:'🌑',name:'Signs of Ragnarök',role:'The prophecy the gods could not stop',gameLink:'ragnarok'},
@@ -1354,18 +1354,12 @@ const LIBRARY = {
 const PLAY_STORIES = {
   greek:[
     {arc:'Arc 1',id:'underworld',icon:'💀',name:'The Underworld',desc:'You wake on the banks of the Styx. Charon waits. Navigate the realm of Hades and choose your eternal fate.',prompt:`The player just died and woke on the banks of the Styx in the Greek Underworld. They must navigate Hades' realm — facing Charon, the judges of the dead, Cerberus, shades of heroes — choosing their fate: Elysium, rebirth, Tartarus, or escape.`},
-    {arc:'Arc 2',id:'olympus',icon:'⚡',name:'Mount Olympus',desc:'Zeus has summoned you. A mortal in the divine court — navigate the gods\' politics and survive.',prompt:`The player, a mortal, has been summoned to Mount Olympus by Zeus. They must navigate divine politics, forge alliances, and survive — possibly earning immortality or being cast down.`},
     {arc:'Arc 3',id:'labyrinth',icon:'🌀',name:'The Labyrinth',desc:'Lost in Daedalus\'s maze. The Minotaur hunts. Find your way out — or become legend.',prompt:`The player is lost in Daedalus's Labyrinth on Crete. The Minotaur hunts them. They must find their way through, gathering clues and finding allies among the lost.`},
-    {arc:'Arc 4',id:'hero',icon:'🗡️',name:"A Hero's Quest",desc:'The Oracle spoke your name. A monster plagues the land. Your legend begins at dawn.',prompt:`The player is a young hero chosen by the Oracle at Delphi to slay a creature terrorizing the land. Their journey across Greece will forge or break them into legend.`},
     {arc:'Arc 4',id:'troy',icon:'🐴',name:'The Fall of Troy',desc:'The horse is inside the walls. Last night of Troy. Your choices decide who lives.',prompt:`The player is a Trojan on the final night of the Trojan War. The wooden horse stands inside the walls. They must choose who to warn, who to save, and whether to flee or fight.`},
-    {arc:'Arc 5',id:'poseidon',icon:'🌊',name:'Wrath of Poseidon',desc:'Your ship is gone. An unknown shore. Something ancient watches from the dark.',prompt:`The player's ship was destroyed by Poseidon. They wake on an unmapped island with ancient secrets. Survive, uncover the truth, and find a way home.`},
   ],
   norse:[
     {arc:'Arc 2',id:'forge',icon:'🔨',name:'The Forge of the Gods',desc:'Loki owes the dwarves a debt. You are the mortal messenger who has to collect — from Nidavellir.',prompt:`The player is a mortal trusted by Loki to travel to Nidavellir, the realm of the dwarves, to collect the weapons being forged as payment for one of Loki's debts: Mjolnir, Gungnir, and more. Getting them home safely is another matter.`},
-    {arc:'Arc 3',id:'jotunheim',icon:'🧊',name:'Jotunheim',desc:'A diplomatic mission to the Frost Giants. Do not insult them. Do not trust them.',prompt:`The player has been sent on a dangerous diplomatic mission to Jotunheim, realm of the Frost Giants. They must negotiate with ancient powerful beings who have no love for humans.`},
-    {arc:'Arc 3',id:'loki',icon:'🎭',name:"Loki's Gambit",desc:'The trickster needs a mortal pawn. He chose you. Try not to die.',prompt:`Loki, the trickster god, has chosen the player as a pawn in his latest scheme against the other gods. The player must navigate Loki's deceptions — never knowing if they're being used or sacrificed.`},
-    {arc:'Arc 4',id:'yggdrasil',icon:'🌳',name:'Lost in Yggdrasil',desc:'You fell into the World Tree. Nine realms surround you. Which way is home?',prompt:`The player is trapped within Yggdrasil, the World Tree connecting the nine realms. They must travel between realms to find their way home before the tree's magic consumes them.`},
-    {arc:'Arc 4',id:'valhalla',icon:'⚔️',name:'Gates of Valhalla',desc:'You died with a blade in your hand. Now you stand before Odin\'s hall.',prompt:`The player died heroically in battle and has arrived at the gates of Valhalla. They must prove their worth to Odin and discover why the Allfather summoned them specifically.`},
+    {arc:'Arc 1',id:'loki',icon:'🎭',name:"Loki's Gambit",desc:'The trickster needs a mortal pawn. He chose you. Try not to die.',prompt:`Loki, the trickster god, has chosen the player as a pawn in his latest scheme against the other gods. The player must navigate Loki's deceptions — never knowing if they're being used or sacrificed.`},
     {arc:'Arc 5',id:'ragnarok',icon:'🐍',name:'The Eve of Ragnarök',desc:'The great serpent stirs. Fimbulwinter begins. You have seven days before the end.',prompt:`It is the eve of Ragnarök. The player has received a vision from the Norns. They have seven choices before the world ends. Their actions may delay the inevitable — or change it.`},
   ]
 };
@@ -2090,7 +2084,7 @@ async function callAPI(isLast){
     const res=await fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',
       headers:{'Content-Type':'application/json','x-api-key':API_KEY,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-      body:JSON.stringify({model:'claude-sonnet-4-5',max_tokens:1200,system:sysPrompt,messages:convo})
+      body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1200,system:sysPrompt,messages:convo})
     });
     if(!res.ok){const e=await res.json().catch(()=>({}));const msg=e.error?.message||`HTTP ${res.status}`;const fullErr=`API Error ${res.status}: ${msg} | type: ${e.error?.type||'unknown'}`;document.getElementById('story-text').textContent=fullErr;throw new Error(fullErr);}
     const data=await res.json();
@@ -2923,7 +2917,7 @@ async function getChatResponse(userMsg) {
         'anthropic-dangerous-direct-browser-access': 'true'
       },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-5',
+        model: 'claude-sonnet-4-6',
         max_tokens: 200,
         system: getChatSystemPrompt(chatChar),
         messages: messages
